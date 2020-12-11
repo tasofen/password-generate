@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+body {
+    padding: 15px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    outline: 1px solid #ccc;
+}
+#password {
+    width: 100%;
+    margin: 0 0 15px;
+    text-align: center;
+    padding: 5px 15px;
+    font-size: 22px;
+    outline: 0;
+}
+.range-value-wrap {
+    text-align: center;
+}
+#range {
+    width: 100%;
+}
+.list {
+    display: flex;
+    user-select: none;
+    padding: 0;
+    justify-content: space-between;
+}
+.list input {
+    display: none;;
+}
+.list label {
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    width: 25%;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.list input:checked + label {
+    background: #a1ffb8;;
+}
+
+#btn-generate {
+    transition: background .1s;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+    background: #d52d26;
+    padding: 15px 45px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+    
+}
+#btn-generate:hover {
+    background: #c02922;
+}
+#btn-generate:active {
+    background: #aa251f;
+}
+
+#btn-copy {
+    transition: background .1s;
+    width: 100%;
+    max-width: 150px;
+    margin: 15px auto 0;
+    display: block;
+    background: #bdbdbd;
+    padding: 5px 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+}
+#btn-copy:hover {
+    background: #a6a6a6;
+}
+#btn-copy:active {
+    background: #8c8c8c;
+}
+
+@media (max-width: 600px) {
+    body, html {
+        padding: 0;
+    }
+
+    .container {
+        outline: 0;
+    }
+
+    .list label {
+        margin: 0 1px;
+        padding: 5px;
+    }
+}
