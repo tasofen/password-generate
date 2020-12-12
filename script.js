@@ -24,7 +24,7 @@ window.addEventListener("load", function() {
         }
 
         if (document.getElementById("symbolChars").checked) {
-            chars += "~`@#$%^&*()-_=+{}[]:;/\\|<>?,.";
+            chars += "~`@#$%^&*()-_=+{}[]:;/\\|<>?,.\"'";
         }
 
         var num = parseInt(document.getElementById("range").value);
